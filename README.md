@@ -37,7 +37,7 @@ BrowseMemory uses an advanced, open-source Machine Learning model (`Transformers
 To provide its functionality, BrowseMemory requires specific browser permissions. Here is exactly why we need them and how they respect your privacy:
 
 *   **`<all_urls>` (Host Permission):** Required to read the text of the websites you visit so they can be saved into your local search index.
-*   **`activeTab` & `scripting`:** Required to inject the local text-extraction script into the page you are currently viewing.
+*   **`activeTab`:** Required to grant the extension temporary access to the currently visible tab when the user interacts with the extension.
 *   **`webNavigation`:** Required to detect when you navigate within modern Single Page Applications (like React apps or YouTube) so the extension can index the new content without a hard page reload.
 *   **`offscreen`:** Required to run the heavy AI Machine Learning model in a background thread so it doesn't slow down or freeze the websites you are actively browsing.
 *   **`alarms`:** Required to run local background tasks, such as periodically cleaning up old data from your database.
