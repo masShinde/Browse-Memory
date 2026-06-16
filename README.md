@@ -30,6 +30,7 @@ All the information extracted from your browsing sessions, as well as the mathem
 BrowseMemory uses an advanced, open-source Machine Learning model (`Transformers.js` / BGE-Small) to understand the context of the pages you read.
 
 *   **One-Time Model Download:** Upon your first use of the extension (or your first search), the extension will make a network request to an open-source model repository (such as Hugging Face) to download the mathematical AI weights required to run the model.
+*   **One-Time Model Download:** Upon your first use of the extension (or your first search), the extension makes a network request to Hugging Face's model repositories and Content Delivery Networks (CDNs) (e.g., `huggingface.co`, `cdn.hf.co`, `aws.cdn.hf.co`) to download the mathematical AI weights (`.onnx` files) required to run the model locally.
 *   **No Data Transmission:** During this download, **no personal data, search queries, or browsing history is transmitted.** The request simply downloads static model files.
 *   **Offline Inference:** Once the model is cached on your machine, all subsequent AI processing and text embedding occurs 100% offline using your computer's local resources.
 
